@@ -16,7 +16,7 @@ With a well-organized grid, all the indexation processes and data status are vis
 Install the module as a composer requirement for environments:
 
 ```
-    composer require developerhub/reindex
+    composer require devhub/reindex
     php bin/magento module:enable DeveloperHub_Reindex
     php bin/magento setup:upgrade
     php bin/magento setup:di:compile
