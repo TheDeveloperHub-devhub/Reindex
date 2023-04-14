@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="DeveloperHub_Reindex::menu"
+             title="DeveloperHub Indexer"
+             module="DeveloperHub_Reindex"
+             sortOrder="20"
+             parent="DeveloperHub_Core::developerhub"
+             resource="DeveloperHub_Reindex::menu"/>
+        <add id="DeveloperHub_Reindex::reindex"
+             title="Indexer Reindex"
+             module="DeveloperHub_Reindex"
+             sortOrder="50"
+             action="indexer/indexer/list"
+             resource="DeveloperHub_Reindex::reindex"
+             parent="DeveloperHub_Reindex::menu"
+        />
+    </menu>
+</config>
